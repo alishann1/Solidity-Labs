@@ -1,0 +1,93 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Fail",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Scholarshp",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "e1",
+				"outputs": [
+					{
+						"internalType": "enum Enum.Exam",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "e3",
+				"outputs": [
+					{
+						"internalType": "enum Enum.Exam",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "idelete",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Task 1 lab 1.sol": "Enum"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Task 1 lab 1.sol": {
+			"keccak256": "0xfd1cd07650ae317a13a74edf23771ad49c846d2055fd2e9b27869299bf98bfbb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8fd6f730a52106d2cb3cf38442f27763ba2488e0e640bd4bc29045218bf6d41f",
+				"dweb:/ipfs/QmcH4FThQwD8GYLTdRMPhmZC79DoKG6V6jwUPttktnW2yp"
+			]
+		}
+	},
+	"version": 1
+}

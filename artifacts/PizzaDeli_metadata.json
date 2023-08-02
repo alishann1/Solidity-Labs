@@ -1,0 +1,121 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "GetAll",
+				"outputs": [
+					{
+						"internalType": "enum PizzaDeli.PizzaOrder",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum PizzaDeli.PizzaOrder",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum PizzaDeli.PizzaOrder",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "P1",
+				"outputs": [
+					{
+						"internalType": "enum PizzaDeli.PizzaOrder",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "P2",
+				"outputs": [
+					{
+						"internalType": "enum PizzaDeli.PizzaOrder",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "P3",
+				"outputs": [
+					{
+						"internalType": "enum PizzaDeli.PizzaOrder",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum PizzaDeli.PizzaOrder",
+						"name": "_P",
+						"type": "uint8"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"practice.sol": "PizzaDeli"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"practice.sol": {
+			"keccak256": "0x478a76a5c9eb0a17e8b726c39dfe8534b8df5346a3409ebb09b680a08c8254cf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a8a9d5897dcf074b4056d248a211dde1132c768452d27d75bd69d2746c10b75a",
+				"dweb:/ipfs/QmeG5TAPzJ7AK6TXc5jghhgR54oMjq3SefxsVBHpNMk4Pr"
+			]
+		}
+	},
+	"version": 1
+}

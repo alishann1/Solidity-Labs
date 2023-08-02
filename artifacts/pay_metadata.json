@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "a",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"enum.sol": "pay"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"enum.sol": {
+			"keccak256": "0xa1fec14235d524fbf2b64d1fe78c2cde4b7c9aeb5502bceabbcd26ba0f43420e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://17c3c166878679f83bbf0fa78efca4d9425cc425ed89bcd82fe50b9efe132a65",
+				"dweb:/ipfs/QmTt6UJErPLKVQGovf2zySprjGN61LkLLFAhF63hykYE9C"
+			]
+		}
+	},
+	"version": 1
+}

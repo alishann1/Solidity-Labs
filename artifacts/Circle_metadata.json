@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "r",
+						"type": "uint256"
+					}
+				],
+				"name": "getCircumference",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Task 3 lab 31.sol": "Circle"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Task 3 lab 31.sol": {
+			"keccak256": "0x17cdf0cc78607746cf1152d83b19541777b56c3bbee5bdb3e22f119b2ca0b4bf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fc5aeb71dbd2387bde489840d5aaee008f574ca9db8bac205f8faffca02de9d1",
+				"dweb:/ipfs/QmSYXMWUq2z3W9xZXmUVykj7UooPCgYY7YJb2q98ydm7PB"
+			]
+		}
+	},
+	"version": 1
+}
