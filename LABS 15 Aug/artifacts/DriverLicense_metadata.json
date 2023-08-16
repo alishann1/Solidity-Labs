@@ -1,0 +1,81 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "requiredAge",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "TooYoung",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					}
+				],
+				"name": "DriverID",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 15 Aug/Task lab15.sol": "DriverLicense"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 15 Aug/Task lab15.sol": {
+			"keccak256": "0xf13bd2cb2fbb79269360524a49ed1328cb61a0c3d05dccd8be756e952cfaaa01",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3d299f59d97b78c7469fbf1a03604ebeda16fa6d654819b2ee2fc271d5842d7e",
+				"dweb:/ipfs/QmXbpcy3BXRMV8Lsu2dxbZiXXiFCRNtmaMAedDWn8YZbZP"
+			]
+		}
+	},
+	"version": 1
+}

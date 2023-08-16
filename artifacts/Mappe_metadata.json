@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Task 1 lab7.sol": "Mappe"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Task 1 lab7.sol": {
+			"keccak256": "0x130a41ed20cd6e80b8d63e24d2e2718dcbf073771749c1fa7edc30b6dbc7f330",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cddb0654ec8339971b0337e49dc4f1c49e6ba839b7a0f8d93375198b1620641a",
+				"dweb:/ipfs/QmeRzMwMC6XmRZHjMoZWT5bqxarjvKUSr4RbdZfRkxWxfn"
+			]
+		}
+	},
+	"version": 1
+}

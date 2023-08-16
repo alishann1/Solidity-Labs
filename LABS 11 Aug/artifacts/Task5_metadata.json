@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_initialOwner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ZeroAddress",
+						"type": "string"
+					}
+				],
+				"name": "ZeroAddressInputted",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 11 Aug/Task All lab11.sol": "Task5"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 11 Aug/Task All lab11.sol": {
+			"keccak256": "0xcee2bff81a32b5c3c994bb3f4c74066adf410d26dcf09125d9b65167bc3e8faa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://169ae56b8fbdd5928a1fbccda28c019c0f48b1e7f5c554020f194ec125ba8865",
+				"dweb:/ipfs/Qmbunk8ehzkBwEWyRnqCfY48zYazMXYFXE6Fc7A6YsY4AT"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "generateFibonacci",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 4 Aug/task 3 lab4.sol": "FibonacciSeries"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 4 Aug/task 3 lab4.sol": {
+			"keccak256": "0x96ebcda2b63f238d538b5d081e8aeca8853b8bc0c6765203111f5788aa31e83b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://157c166eb2458f5611c21c1ec42f28ba965dd8d52eb8e0359c89910c616f2d1d",
+				"dweb:/ipfs/QmTfVx35LQEYKSxJtqWo1r61nedVCCwmNi4spCGFokMoUn"
+			]
+		}
+	},
+	"version": 1
+}

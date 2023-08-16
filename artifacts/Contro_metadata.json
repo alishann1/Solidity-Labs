@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "whileTest",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Task 2 lab 2.sol": "Contro"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Task 2 lab 2.sol": {
+			"keccak256": "0xc007ef830dc3c8b73de4f45986f7cbc8bee44aac793b7daadc648ef1db061495",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5fb14ee812404466c125e3ce6e8ab6fd8ef3bad0d932b1e45df3d058ba3e3764",
+				"dweb:/ipfs/QmT53JVQWUxHFFCcL2p6NY8mFEYpaDWJT7JhtdUJVoCnzT"
+			]
+		}
+	},
+	"version": 1
+}

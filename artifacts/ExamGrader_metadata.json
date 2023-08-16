@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "score",
+						"type": "int256"
+					}
+				],
+				"name": "gradeExam",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "passed",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "grade",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lab4solidity.sol": "ExamGrader"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lab4solidity.sol": {
+			"keccak256": "0x33c12a22c66dcef2468e043c765de8c6392eb9770091ecffbada7c45d6afa41c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://32db14c3973d5c248045189739884002f89d3b87df1977c4ea2819173f1b17c9",
+				"dweb:/ipfs/QmbCA9oXYQQAuxMKAB2W4kvdEndspS6uhCMQqPffcAr8Mr"
+			]
+		}
+	},
+	"version": 1
+}

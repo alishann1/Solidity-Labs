@@ -2,7 +2,7 @@
 pragma solidity ^0.8.17;
 
 contract ExamGrader {
-    function gradeExam(int score) public pure returns (bool , string memory ) {
+    function gradeExam(int score) public pure returns (bool passed, string memory grade) {
         if (score >= 60) {
             if (score >= 80 && score <= 100) {
                 return (true, "Achieved Grade: A");

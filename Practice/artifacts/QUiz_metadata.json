@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Practice/quiz.sol": "QUiz"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Practice/quiz.sol": {
+			"keccak256": "0x32a87e3697488c57aede1e066948aae6975eed1265fa0a50a4dfcc90c42c98e5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9e0868f9883591c881f520e7714b52b67b6094ca529b51963af5a38ae0bebabb",
+				"dweb:/ipfs/QmUKGS64x6bVrgKsN2ik4BBx1HgWZSAmshMxoamcgHpKev"
+			]
+		}
+	},
+	"version": 1
+}

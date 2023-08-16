@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "ADMIN_Address",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAdminAdress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"task4solidity.sol": "Admin"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"task4solidity.sol": {
+			"keccak256": "0x7000321542467b28c0635ab2bc4c22204650537661a9eddcd92fbe4667e270ee",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://563e16d576750edf862f1b4349d0fda62e849db2013083f6cec041f73573ceca",
+				"dweb:/ipfs/QmSHJA6MwTm46NK7SbJD1HEDMGxQg1RsyeVYXMiWFAZ1Gu"
+			]
+		}
+	},
+	"version": 1
+}

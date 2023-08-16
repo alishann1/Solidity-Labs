@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateFactorial",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Task 2 lab 2.sol": "FactorialCalculator"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Task 2 lab 2.sol": {
+			"keccak256": "0xa6f27dda819a176ac746078a40c93e90976a019fa6063db376afe265f873a982",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fad30dbdf13dfa53defe575fc32d32815e0a4fe0d1e447b12bf6df37a51ccd7e",
+				"dweb:/ipfs/QmUFTbQvD9XwNUdEdpZxEofrUC2nCbVKG1apojNnT8XogA"
+			]
+		}
+	},
+	"version": 1
+}

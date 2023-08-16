@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "fStorage",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Task 4 lab7.sol": "StorageDLoc"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Task 4 lab7.sol": {
+			"keccak256": "0xf09dae0c245c7e0315e855c776f3a367d1e18a42a796331e7d4520f651717c3c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://42d33add37473c6f52e00a9386a7c081f6141230aa7d1ca7b0ef8ce4a1cbb266",
+				"dweb:/ipfs/QmTjH5zgJ3mBUvmnepwSmgFPWD35dpC1paz9P9hbnCfBfv"
+			]
+		}
+	},
+	"version": 1
+}

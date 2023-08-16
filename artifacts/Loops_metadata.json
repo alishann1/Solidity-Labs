@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "loop",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ticketpractice.sol": "Loops"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ticketpractice.sol": {
+			"keccak256": "0xb4eedf77674093eca91f27b721437d7ca39d79c2d1ec79c414efb1062116ca4a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://994333f22615148ea682ad069d7c6bdd29ab4fac95b3f4ea6d09247d9dfa6a7c",
+				"dweb:/ipfs/QmQAB7cSrzzeAoMXcW2fcoCiYnRn8nTVCp6AUoMzhSDfyf"
+			]
+		}
+	},
+	"version": 1
+}

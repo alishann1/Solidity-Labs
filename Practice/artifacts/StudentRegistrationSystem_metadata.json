@@ -1,0 +1,272 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "rollnumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "registrationDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum StudentRegistrationSystem.Department",
+						"name": "department",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum StudentRegistrationSystem.Status",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ObtainedMarks",
+						"type": "uint256"
+					}
+				],
+				"name": "RegisterStudents",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "rollnumber",
+						"type": "uint256"
+					}
+				],
+				"name": "Retrieve",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "registrationDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum StudentRegistrationSystem.Department",
+						"name": "department",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum StudentRegistrationSystem.Status",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ObtainedMarks",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "rollnumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "registrationDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum StudentRegistrationSystem.Department",
+						"name": "department",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum StudentRegistrationSystem.Status",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ObtainedMarks",
+						"type": "uint256"
+					}
+				],
+				"name": "UpdateStudentInfo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum StudentRegistrationSystem.Department",
+						"name": "_department",
+						"type": "uint8"
+					}
+				],
+				"name": "getCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTop3BlockchainAchievers",
+				"outputs": [
+					{
+						"internalType": "string[3]",
+						"name": "names",
+						"type": "string[3]"
+					},
+					{
+						"internalType": "uint256[3]",
+						"name": "ages",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "uint256[3]",
+						"name": "registrationDates",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "enum StudentRegistrationSystem.Status[3]",
+						"name": "statuses",
+						"type": "uint8[3]"
+					},
+					{
+						"internalType": "uint256[3]",
+						"name": "obtainedMarks",
+						"type": "uint256[3]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "registrationDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum StudentRegistrationSystem.Department",
+						"name": "department",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum StudentRegistrationSystem.Status",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ObtainedMarks",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Practice/srs.sol": "StudentRegistrationSystem"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Practice/srs.sol": {
+			"keccak256": "0xd5ab96ccc7e8225e1d1979dea0b430ac6e846c47beeb9e9ac30984ad1c7ec7b0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b11295fabb5b410515e2ef7e3388cc6ea04211be705ef3f5a531178f7593fa33",
+				"dweb:/ipfs/QmNtmwZoR5oHfdzebdtKDQo5BvGRjrbmv4KJntGWbkDkQR"
+			]
+		}
+	},
+	"version": 1
+}

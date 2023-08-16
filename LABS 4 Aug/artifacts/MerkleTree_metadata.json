@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getter",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "reset",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 4 Aug/Task 9 lab4.sol": "MerkleTree"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 4 Aug/Task 9 lab4.sol": {
+			"keccak256": "0x392fbcad3a67d40ac2d88454649017a01de082a44593b9f5d7dd22ffdbe38afd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8d1c0723d8031c8f345bbb20e01b4c6df5db5ead355c6cc69ee4b653109110f3",
+				"dweb:/ipfs/QmcW7PnAfBmVEL5hhzid4Gh7nKCGuGBBSCaSj71orqMUCk"
+			]
+		}
+	},
+	"version": 1
+}

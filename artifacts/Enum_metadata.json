@@ -6,25 +6,17 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "Fail",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "Scholarshp",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "e1",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "get",
 				"outputs": [
 					{
-						"internalType": "enum Enum.Exam",
+						"internalType": "enum Enum.WeekDay",
 						"name": "",
 						"type": "uint8"
 					}
@@ -33,21 +25,19 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "e3",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "enum Enum.Exam",
-						"name": "",
+						"internalType": "enum Enum.WeekDay",
+						"name": "_role",
 						"type": "uint8"
+					},
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "idelete",
+				"name": "set",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -66,7 +56,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Task 1 lab 1.sol": "Enum"
+			"enum.sol": "Enum"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -80,12 +70,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Task 1 lab 1.sol": {
-			"keccak256": "0xfd1cd07650ae317a13a74edf23771ad49c846d2055fd2e9b27869299bf98bfbb",
+		"enum.sol": {
+			"keccak256": "0x452b6df38927369d114b762c9f84458b24f061d0b4cd83b8cbcbc88bb7411a33",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8fd6f730a52106d2cb3cf38442f27763ba2488e0e640bd4bc29045218bf6d41f",
-				"dweb:/ipfs/QmcH4FThQwD8GYLTdRMPhmZC79DoKG6V6jwUPttktnW2yp"
+				"bzz-raw://0327a9deecc00a3019dfc0687ad0375a01a231794321ae0fb3882d5e6825b55a",
+				"dweb:/ipfs/QmQg9S5MYsdPLTLnZvhi3UQetqTVSDZ3rkRWKT4y85ssqb"
 			]
 		}
 	},

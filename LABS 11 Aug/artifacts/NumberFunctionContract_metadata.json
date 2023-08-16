@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "inputValue",
+						"type": "int256"
+					}
+				],
+				"name": "numgive",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 11 Aug/Task All lab11.sol": "NumberFunctionContract"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 11 Aug/Task All lab11.sol": {
+			"keccak256": "0x12466dcaf223b7e0f39884cfdff48734ff7570f23dd175a0344fc518c5e57142",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a8553d6f06c19d45ddb00d09ee32fea5076838fbb27c44e5f733f5018f6e24c2",
+				"dweb:/ipfs/QmTBmShgTvcsa3dCqW9PQQkFxugq1rBewKd7PBcYERxZnj"
+			]
+		}
+	},
+	"version": 1
+}

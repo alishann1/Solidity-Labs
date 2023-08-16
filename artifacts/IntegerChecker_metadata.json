@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"name": "recommendDataType",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lab2solidity.sol": "IntegerChecker"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lab2solidity.sol": {
+			"keccak256": "0x432a1b7c48e6c10ad8d51f32f7caf32d702f33fda8252040cc67068186273c3f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f7615cd5875a77818e0b028203134d674da9d3924277b846403cbc61edf9bf59",
+				"dweb:/ipfs/QmeEDkM9MFiVH9ew7K3UjrvUJEkbJFLL8XaLGmM98XsXvT"
+			]
+		}
+	},
+	"version": 1
+}

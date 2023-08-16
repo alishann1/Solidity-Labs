@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "dowhile",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DoWhile lab2.sol": "ControlFlow"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"DoWhile lab2.sol": {
+			"keccak256": "0x694342aba870d55ab7573d4a709049b5899aa8e0ed3efa15921e79af2cf174f4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d82e20252b71d0df5bae46e0eb16b1ecd1d41dc3febd3371ba7fefcce08dd11d",
+				"dweb:/ipfs/QmVdoqTSWncHv19dRsweE1Q3EQNeH2t7Kz9dwZP9s29UmT"
+			]
+		}
+	},
+	"version": 1
+}

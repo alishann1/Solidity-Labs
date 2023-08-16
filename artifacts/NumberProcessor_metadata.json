@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[5]",
+						"name": "numbers",
+						"type": "uint256[5]"
+					}
+				],
+				"name": "calculateSumAndAverage",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "sum",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "average",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Task 2 lab4.sol": "NumberProcessor"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Task 2 lab4.sol": {
+			"keccak256": "0x6e0c7ad916241dc6d4e2122c104b6460412d3face36d5c99f2e320929ab8e2cc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3638db2107621885ba77c566d2584c198c9deeb052bb7e83393e07e1455ba152",
+				"dweb:/ipfs/QmRcKEmmAsKEtfG4V4aoKaqADgvZvZtJxbFY2XBgDn2ok7"
+			]
+		}
+	},
+	"version": 1
+}

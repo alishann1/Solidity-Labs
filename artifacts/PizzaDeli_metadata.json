@@ -94,7 +94,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"practice.sol": "PizzaDeli"
+			"Task 1 lab 1.sol": "PizzaDeli"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -108,12 +108,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"practice.sol": {
-			"keccak256": "0x478a76a5c9eb0a17e8b726c39dfe8534b8df5346a3409ebb09b680a08c8254cf",
+		"Task 1 lab 1.sol": {
+			"keccak256": "0xfd1cd07650ae317a13a74edf23771ad49c846d2055fd2e9b27869299bf98bfbb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a8a9d5897dcf074b4056d248a211dde1132c768452d27d75bd69d2746c10b75a",
-				"dweb:/ipfs/QmeG5TAPzJ7AK6TXc5jghhgR54oMjq3SefxsVBHpNMk4Pr"
+				"bzz-raw://8fd6f730a52106d2cb3cf38442f27763ba2488e0e640bd4bc29045218bf6d41f",
+				"dweb:/ipfs/QmcH4FThQwD8GYLTdRMPhmZC79DoKG6V6jwUPttktnW2yp"
 			]
 		}
 	},
