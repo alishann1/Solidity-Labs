@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getexternal",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 16 Aug/Task All 16.sol": "External2"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 16 Aug/Task All 16.sol": {
+			"keccak256": "0x16aeb85d6deb1da655dc5476ee854718b5d57f47c7c7b1aeb1a688c65ad051d5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://afdc56a67c7ada86513ecf10cd1dedd805f8fbadfc01bed3c18f964b521fdee3",
+				"dweb:/ipfs/QmUBEgm1BULytrZMk7sgdRtLfKXUhwMgkcLYSugh4szUVG"
+			]
+		}
+	},
+	"version": 1
+}

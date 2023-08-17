@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "demo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "temp",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 16 Aug/Task All 16.sol": "Car"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 16 Aug/Task All 16.sol": {
+			"keccak256": "0x218c013ff9b19e20bba2f7f8fa5497ffe81de88218591e2d9a00d4209752e923",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://792e57e926f15fe39b5e623d4867f8bdb8131ae6f6cc5dc98d9dd0d7fb542a27",
+				"dweb:/ipfs/QmZhNFfBRu16iiuX76xNj9FauBzaPQELqeosgs1jR2wXie"
+			]
+		}
+	},
+	"version": 1
+}

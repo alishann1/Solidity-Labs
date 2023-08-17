@@ -1,149 +1,81 @@
-// SPDX-License-Identifier: MIT
+//SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-contract StudentRegisterationSystem{
-    // Task 1
+contract StudentRegSystem {
     enum Department {
-        Artificial_Intelligence,
-        Blockchain,
-        E_Commerce,
-        Arts
+        AI,         
+        Blockchain, 
+        E_Commerce, 
+        Arts        
     }
-
-    // Task 2
     enum Status {
-        Enrolled,
         NotEnrolled,
-        Graduated,
-        Expelled
+        Enrolled,   
+        Graduated,  
+        Expelled    
     }
-
-    // Task 3
     struct Student {
         string name;
         uint age;
-        uint registrationDate;
-        Department department;
+        uint date; 
+        Department departnment;
         Status status;
-        uint ObtainedMarks;
+        uint obtAInedMarks;
     }
 
-    // Task 4
-    mapping(uint => Student) public students;
-    uint public totalStudents;
+    mapping (uint=>Student) TotalStudents;
+    uint public studentLength;
+    uint[3] top3;
 
-    // Task 5
-    function registerStudent(
-        uint rollnumber,
-        string memory name,
-        uint age,
-        Department department,
-        Status status,
-        uint ObtainedMarks,
-        uint registrationDate
-    ) public {
-        students[rollnumber] = Student(
-            name, 
-            age, 
-            registrationDate, 
-            department, 
-            status, 
-            ObtainedMarks);
-            totalStudents++;
+    function register(string memory _name, uint _age, uint _date, Department _departnment)public returns(uint){
+        uint _roll = studentLength+1;
+        TotalStudents[_roll]=Student(_name,_age,_date,_departnment,Status.NotEnrolled,0); 
+        studentLength++;    
+        return _roll;
     }
-
-    // Task 6
-    function updateStudentInfo(
-        uint rollnumber,
-        string memory Name,
-        uint Age,
-        Department department,
-        Status status,
-        uint ObtainedMarks,
-        uint registrationDate
-    ) public {
-        students[rollnumber] = Student(
-        Name,
-        Age,
-        registrationDate,
-        department,
-        status,
-        ObtainedMarks);
-    }
-
-    // Task 7 
-    function retrieve (uint rollnumber) public view returns (
-        string memory name,
-        uint age,
-        uint registrationDate,
-        Department department,
-        Status status,
-        uint ObtainedMarks
-    ) { Student storage student = students[rollnumber];
-    
-        return (
-            student.name,
-            student.age,
-            student.registrationDate,
-            student.department,
-            student.status,
-            student.ObtainedMarks
-        );
-    }
-    //Task 8
-    function getDepartmentStudentCount(Department _department) public view returns (uint) {
-    uint count = 0;
-    for (uint i = 1; i <= totalStudents; i++) {
-        if (students[i].department == _department) {
-            count++;
+    function update(uint _rollNo,string memory _name,uint _age,uint _date,Department _departnment,Status _status,uint _obtAInedMarks)public{
+        if(_rollNo>0||_rollNo <= studentLength){
+            TotalStudents[_rollNo] = Student(_name, _age, _date, _departnment, _status, _obtAInedMarks); 
         }
+        
     }
-    return count;
-}
-// Task 9 
-   function getTop3BlockchainAchievers() public view returns (
-    string[3] memory names,
-    uint[3] memory ages,
-    uint[3] memory registrationDates,
-    Status[3] memory statuses,
-    uint[3] memory obtainedMarks
-) {
-    uint[3] memory topMarks;
-
-    for (uint i = 1; i <= totalStudents; i++) {
-        Student storage student = students[i];
-
-        if (student.department == Department.Blockchain && student.status != Status.Expelled && student.status != Status.NotEnrolled) {
-            for (uint j = 0; j < 3; j++) {
-                if (student.ObtainedMarks > topMarks[j]) {
-                    for (uint k = 2; k > j; k--) {
-                        topMarks[k] = topMarks[k - 1];
-                        names[k] = names[k - 1];
-                        ages[k] = ages[k - 1];
-                        registrationDates[k] = registrationDates[k - 1];
-                        statuses[k] = statuses[k - 1];
-                        obtainedMarks[k] = obtainedMarks[k - 1];
-                    }
-                    topMarks[j] = student.ObtainedMarks;
-                    names[j] = student.name;
-                    ages[j] = student.age;
-                    registrationDates[j] = student.registrationDate;
-                    statuses[j] = student.status;
-                    obtainedMarks[j] = student.ObtainedMarks;
-                    break;  
+    function retrieve(uint _rollNo)public view returns(string memory name,uint age,uint date,Department departnment, Status status,uint obtAInedMarks){
+        return (TotalStudents[_rollNo].name,TotalStudents[_rollNo].age,TotalStudents[_rollNo].date,TotalStudents[_rollNo].departnment,TotalStudents[_rollNo].status,TotalStudents[_rollNo].obtAInedMarks);        
+    }
+    function countOfStudents()public view returns(uint AI ,uint Blockchain, uint E_Commerce, uint Arts){
+        uint _AI;
+        uint _Blockchain;
+        uint _E_Commerce;
+        uint _Art;
+        for(uint i=1;i<=studentLength;i+1){
+            if(TotalStudents[i].departnment==Department(0)){
+                _AI++;
+            }else if(TotalStudents[i].departnment==Department(1)){
+                _Blockchain++;
+            }else if(TotalStudents[i].departnment==Department(2)){
+                _E_Commerce++;
+            }else if(TotalStudents[i].departnment==Department(3)){
+                _Art++;
+            }
+        }
+        return (_AI, _Blockchain, _E_Commerce, _Art);       
+    }
+    function topGetter()public view returns (uint[3] memory) {
+        return top3;
+    }
+    function top3Achivers()public {
+        uint[] memory _arr = new uint[](studentLength);
+        for(uint j = 0;j < _arr.length;j++){
+            for (uint k = 0 ; k < _arr.length-1 ; k++){
+                if(TotalStudents[_arr[k]].obtAInedMarks < TotalStudents[_arr[k+1]].obtAInedMarks){
+                    uint _bucket = _arr[k+1];
+                    _arr[k+1] = _arr[k];
+                    _arr[k] = _bucket;
                 }
             }
         }
+        top3[0] = _arr[0];
+        top3[1] = _arr[1];
+        top3[2] = _arr[2];
     }
-
-    return (names, ages, registrationDates, statuses, obtainedMarks);
 }
-
-  
-}
-
-
-
-
-
-

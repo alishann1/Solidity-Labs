@@ -61,7 +61,7 @@ contract Eventss{
     }
     function NewOwner(address Newowner) public {
         owner = Newowner;
-        emit eventss(preowner, newowner);
+        emit eventss(preowner, Newowner);
     }
     
 } 

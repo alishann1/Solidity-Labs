@@ -120,5 +120,19 @@ contract DriverLicense{
 
 //Task 10
 contract ATM{
-    CashAvailable = 
+   uint public CashAvailable = 10000;
+
+   error InsufficientFunds(uint insuficientFunds, uint Currentcash);
+
+   function MoneyWithdraw(uint WithdrawAmount) public {
+       if (CashAvailable < WithdrawAmount) {
+           revert InsufficientFunds(CashAvailable, WithdrawAmount);
+       } else {
+           CashAvailable -= WithdrawAmount;
+       }
+   }
+   
+    function ATMRefill(uint refillAmount) public {
+        CashAvailable += refillAmount;
+    }
 }
