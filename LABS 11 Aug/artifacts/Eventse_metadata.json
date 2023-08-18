@@ -101,11 +101,11 @@
 	},
 	"sources": {
 		"LABS 11 Aug/Task All lab11.sol": {
-			"keccak256": "0x4940b6c00623b599117e95e62624eb57196d5d2de0d36681c7ad55d7309e4336",
+			"keccak256": "0x6ab19a97da237f3108e68f8484f9703435853426e5bc9f858c568fc0d21791a0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1c18d5bf7d49dcbe22580d8cf8077761bb67a8b8863e539d661fec147d0dddf2",
-				"dweb:/ipfs/QmVnEy1eyAPAUL47Wcqzn1zgXLT3mBGLGprNRLAeAA8cBs"
+				"bzz-raw://76d2159df90026f90b499c3113f3eab67e0f9658cbe72c957a788a586021e226",
+				"dweb:/ipfs/QmRLHeNP83gjzfHbifZkSDKvksnRreThD9C4gN7cBtNMBQ"
 			]
 		}
 	},

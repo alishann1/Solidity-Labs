@@ -1,75 +1,136 @@
-//SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-contract StudentRegSystem {
+contract StudentRegistrationSystem {
+    
+    // Task 1
     enum Department {
-        AI,         
-        Blockchain, 
-        E_Commerce, 
-        Arts        
+        AI,
+        Blockchain,
+        E_Commerce,
+        Arts
     }
+
+    // Task 2
     enum Status {
         NotEnrolled,
-        Enrolled,   
-        Graduated,  
-        Expelled    
+        Enrolled,
+        Graduated,
+        Expelled
     }
+
+    //Task 3
     struct Student {
         string name;
         uint age;
-        uint date; 
-        Department departnment;
+        uint date;
+        Department department;
         Status status;
-        uint obtAInedMarks;
+        uint ObtainedMarks;
     }
 
-    mapping (uint=>Student) TotalStudents;
-    uint public studentLength;
+    //Task 4
+    mapping(uint => Student) TotalStudents;
+    uint public StudentCount;
     uint[3] top3;
 
-    function register(string memory _name, uint _age, uint _date, Department _departnment)public returns(uint){
-        uint _roll = studentLength+1;
-        TotalStudents[_roll]=Student(_name,_age,_date,_departnment,Status.NotEnrolled,0); 
-        studentLength++;    
+    // Task 5
+    function register(
+        string memory name,
+        uint age,
+        uint date,
+        Department department,
+        uint ObtainedMarks
+    ) public returns (uint) {
+        uint _roll = StudentCount + 1;
+        TotalStudents[_roll] = Student(
+            name,
+            age,
+            date,
+            department,
+            Status.NotEnrolled,
+            ObtainedMarks
+        );
+        StudentCount++;
         return _roll;
     }
-    function update(uint _rollNo,string memory _name,uint _age,uint _date,Department _departnment,Status _status,uint _obtAInedMarks)public{
-        if(_rollNo>0||_rollNo <= studentLength){
-            TotalStudents[_rollNo] = Student(_name, _age, _date, _departnment, _status, _obtAInedMarks); 
+
+    // Task 6
+    function update(
+        uint rollno,
+        string memory name,
+        uint age,
+        uint date,
+        Department department,
+        Status status,
+        uint _ObtainedMarks
+    ) public {
+        if (rollno > 0 && rollno <= StudentCount) {
+            TotalStudents[rollno] = Student(
+                name,
+                age,
+                date,
+                department,
+                status,
+                _ObtainedMarks
+            );
         }
-        
     }
-    function retrieve(uint _rollNo)public view returns(string memory name,uint age,uint date,Department departnment, Status status,uint obtAInedMarks){
-        return (TotalStudents[_rollNo].name,TotalStudents[_rollNo].age,TotalStudents[_rollNo].date,TotalStudents[_rollNo].departnment,TotalStudents[_rollNo].status,TotalStudents[_rollNo].obtAInedMarks);        
+
+    // Task 7
+    function retrieve(uint rollno)
+        public
+        view
+        returns (
+            string memory name,
+            uint age,
+            uint date,
+            Department department,
+            Status status,
+            uint ObtainedMarks
+        )
+    {
+        require(rollno > 0 && rollno <= StudentCount, "Invalid roll number");
+        return (
+            TotalStudents[rollno].name,
+            TotalStudents[rollno].age,
+            TotalStudents[rollno].date,
+            TotalStudents[rollno].department,
+            TotalStudents[rollno].status,
+            TotalStudents[rollno].ObtainedMarks
+        );
     }
-    function countOfStudents()public view returns(uint AI ,uint Blockchain, uint E_Commerce, uint Arts){
-        uint _AI;
-        uint _Blockchain;
-        uint _E_Commerce;
-        uint _Art;
-        for(uint i=1;i<=studentLength;i+1){
-            if(TotalStudents[i].departnment==Department(0)){
-                _AI++;
-            }else if(TotalStudents[i].departnment==Department(1)){
-                _Blockchain++;
-            }else if(TotalStudents[i].departnment==Department(2)){
-                _E_Commerce++;
-            }else if(TotalStudents[i].departnment==Department(3)){
-                _Art++;
+
+    // Task 8
+    function getCount(Department department) public view returns (uint) {
+        uint count = 0;
+        for (uint i = 1; i <= StudentCount; i++) {
+            if (TotalStudents[i].department == department) {
+                count++;
             }
         }
-        return (_AI, _Blockchain, _E_Commerce, _Art);       
+        return count;
     }
-    function topGetter()public view returns (uint[3] memory) {
+
+    // Task 9
+    function TopAchiever() public view returns (uint[3] memory) {
         return top3;
     }
-    function top3Achivers()public {
-        uint[] memory _arr = new uint[](studentLength);
-        for(uint j = 0;j < _arr.length;j++){
-            for (uint k = 0 ; k < _arr.length-1 ; k++){
-                if(TotalStudents[_arr[k]].obtAInedMarks < TotalStudents[_arr[k+1]].obtAInedMarks){
-                    uint _bucket = _arr[k+1];
-                    _arr[k+1] = _arr[k];
+
+    function Top3Achievers() public {
+        uint[] memory _arr = new uint[](StudentCount);
+        for (uint i = 1; i <= StudentCount; i++) {
+            _arr[i - 1] = i;
+        }
+
+        for (uint j = 0; j < _arr.length; j++) {
+            for (uint k = 0; k < _arr.length - 1; k++) {
+                if (
+                    TotalStudents[_arr[k]].ObtainedMarks <
+                    TotalStudents[_arr[k + 1]].ObtainedMarks
+                ) {
+                    uint _bucket = _arr[k + 1];
+                    _arr[k + 1] = _arr[k];
                     _arr[k] = _bucket;
                 }
             }

@@ -7,26 +7,37 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "countOfStudents",
+				"name": "Top3Achievers",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "TopAchiever",
+				"outputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "",
+						"type": "uint256[3]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum StudentRegSystem.Department",
+						"name": "_department",
+						"type": "uint8"
+					}
+				],
+				"name": "getCount",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "AI",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "Blockchain",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "E_Commerce",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "Arts",
+						"name": "",
 						"type": "uint256"
 					}
 				],
@@ -52,7 +63,7 @@
 					},
 					{
 						"internalType": "enum StudentRegSystem.Department",
-						"name": "_departnment",
+						"name": "_department",
 						"type": "uint8"
 					}
 				],
@@ -94,7 +105,7 @@
 					},
 					{
 						"internalType": "enum StudentRegSystem.Department",
-						"name": "departnment",
+						"name": "department",
 						"type": "uint8"
 					},
 					{
@@ -104,7 +115,7 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "obtAInedMarks",
+						"name": "obtainedMarks",
 						"type": "uint256"
 					}
 				],
@@ -119,26 +130,6 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "top3Achivers",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "topGetter",
-				"outputs": [
-					{
-						"internalType": "uint256[3]",
-						"name": "",
-						"type": "uint256[3]"
 					}
 				],
 				"stateMutability": "view",
@@ -168,7 +159,7 @@
 					},
 					{
 						"internalType": "enum StudentRegSystem.Department",
-						"name": "_departnment",
+						"name": "_department",
 						"type": "uint8"
 					},
 					{
@@ -178,7 +169,7 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "_obtAInedMarks",
+						"name": "_obtainedMarks",
 						"type": "uint256"
 					}
 				],
@@ -216,11 +207,11 @@
 	},
 	"sources": {
 		"LABS 8 Aug/Task 1 lab8.sol": {
-			"keccak256": "0x49f5a5e80176bb9b01662afeba032dad5c662d475ef8841b2698f2dbe04d56b0",
+			"keccak256": "0x1455f99c61be923fb263e897c472f35ce4f34ec848a5b99d8212d9674da1519c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://57b71785a41bf4ceeabb4f86894f881efdec1f399454a4e0903b8e5839c68c90",
-				"dweb:/ipfs/QmXsuPgMemqudxZddMwRQy7Z8zwFZRDLHfZaWffbzEKtKR"
+				"bzz-raw://26405e89a0272691374f0f557d71e410e381a8b0db8e40d1738e4111bc8e5f09",
+				"dweb:/ipfs/Qmed7Yone97Pq7iL8kMxznFzoTDzkorka47irHgb9NXLPE"
 			]
 		}
 	},

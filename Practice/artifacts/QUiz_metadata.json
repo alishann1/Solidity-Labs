@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"Practice/quiz.sol": {
-			"keccak256": "0x32a87e3697488c57aede1e066948aae6975eed1265fa0a50a4dfcc90c42c98e5",
+			"keccak256": "0x9305b41e556034fcf8038ecbbeb0544874fb7cf5ec7c595dfe577bb1b4ebe4a5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9e0868f9883591c881f520e7714b52b67b6094ca529b51963af5a38ae0bebabb",
-				"dweb:/ipfs/QmUKGS64x6bVrgKsN2ik4BBx1HgWZSAmshMxoamcgHpKev"
+				"bzz-raw://321ad196e99757c93db30c70b91bbdd14afc923118e09f0ce8a6c837b39086e7",
+				"dweb:/ipfs/QmV4MV2UCr1xR15NEXAnSdagWRjif3PGuhxNzZhzgH1vUH"
 			]
 		}
 	},

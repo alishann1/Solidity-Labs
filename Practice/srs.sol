@@ -1,18 +1,24 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.17;
 contract StudentRegistrationSystem{
+
+    //Task 1
     enum Department{
         Artificial_Intelligence,
         Blockchain, 
         E_Commerce,
         Arts
     }
+
+    //Task 2
     enum Status{
         Enrolled,
         NotEnrolled,
         Graduated,
         Expelled
     }
+
+    //Task 3
     struct Student{
        string name;
        uint age;
@@ -21,27 +27,39 @@ contract StudentRegistrationSystem{
        Status status;
        uint ObtainedMarks; 
     }
-    mapping(uint => Student) public students;
-    uint TotalStudents;
 
-   function RegisterStudents(
-       uint rollnumber,
-       string memory name,
-       uint age,
-       uint registrationDate,
-       Department department,
-       Status status,
-       uint ObtainedMarks   
-    ) public {
-        students[rollnumber] = Student(
-        name,
-        age,
-        registrationDate,
-        department,
-        status,
-        ObtainedMarks );
-        TotalStudents++;
+    //Task 4
+    mapping(uint => Student) public students;
+    uint public totalStudents;
+    uint public nextRollNumber = 1; 
+
+    function getNextRollNumber() internal returns (uint) {
+        uint rollNumber = nextRollNumber;
+        nextRollNumber++;
+        return rollNumber;
     }
+    
+    //Task 5
+    function RegisterStudent(
+        string memory name,
+        uint age,
+        Department department,
+        Status status,
+        uint obtainedMarks   
+    ) public {
+        uint rollNumber = getNextRollNumber();
+        students[rollNumber] = Student(
+            name,
+            age,
+            block.timestamp,
+            department,
+            status,
+            obtainedMarks
+        );
+        totalStudents++;
+    }
+
+    //Task 6
     function UpdateStudentInfo(
        uint rollnumber,
        string memory name,
@@ -59,6 +77,8 @@ contract StudentRegistrationSystem{
         status,
         ObtainedMarks );
     }
+
+    //Task 7
     function Retrieve(uint rollnumber) public view returns (
        string memory name,
        uint age,
@@ -77,14 +97,18 @@ contract StudentRegistrationSystem{
           student.ObtainedMarks
       );      
     }
+
+    //Task 8
     function getCount(Department _department) public view returns (uint) {
         uint count = 0;
-        for (uint i = 1; i <= TotalStudents; i++)
+        for (uint i = 1; i <= totalStudents; i++)
              if(students[i].department == _department) {
                  count++;
     }
              return count;
     }
+
+    //Task 9
     function getTop3BlockchainAchievers() public view returns (
         string[3] memory names,
         uint[3] memory ages,
@@ -94,7 +118,7 @@ contract StudentRegistrationSystem{
     ) {
         uint[3] memory topMarks;
 
-        for (uint i = 1; i <= TotalStudents; i++) {
+        for (uint i = 1; i <= totalStudents; i++) {
             Student storage student = students[i];
 
             if (student.department == Department.Blockchain && student.status != Status.Expelled && student.status != Status.NotEnrolled) {

@@ -1,0 +1,150 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "Buyer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "valueOfPurchase",
+						"type": "uint256"
+					}
+				],
+				"name": "Purchase",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "Seller",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Cash",
+						"type": "uint256"
+					}
+				],
+				"name": "Buy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Register",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "Buyer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ItemPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "Seller",
+						"type": "address"
+					}
+				],
+				"name": "Sell",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 18 Aug/Task All 18.sol": "Marketplace"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 18 Aug/Task All 18.sol": {
+			"keccak256": "0x7c5d60e16dabcbc617c455728dcff1953cce5a17d472ff341ba17a0da055ed00",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://71cf00837984259ca6ebf60fead95dee28fbde979787c9a78b222e4f29b783eb",
+				"dweb:/ipfs/QmY4zocFPJAPfuMpnoZK7dodwkDojF3hCRMXkP42AWiB7j"
+			]
+		}
+	},
+	"version": 1
+}

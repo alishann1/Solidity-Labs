@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
+
+
 //Task 1
 contract Eventse {
     event Transfer (address indexed from, address indexed to, uint amount);

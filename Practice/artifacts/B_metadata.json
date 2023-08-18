@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "foo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Practice/quiz.sol": "B"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Practice/quiz.sol": {
+			"keccak256": "0xb2f02f02e4d33eebfb49b01e3ea3bec5832ef2ff9ea8d1295ce3763cafb224b5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f758a69fda2a0651817a1af1372290f7158079fb4a93e737d57a641ec9176246",
+				"dweb:/ipfs/Qme6CTvBV1H9g8dphz8pxtgZNptW1CWEpEGrcezvDvpENy"
+			]
+		}
+	},
+	"version": 1
+}

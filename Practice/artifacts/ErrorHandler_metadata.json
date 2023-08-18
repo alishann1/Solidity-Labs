@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "MyCustomError",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "triggerError",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Practice/quiz.sol": "ErrorHandler"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Practice/quiz.sol": {
+			"keccak256": "0xf7d9a2ce743fbc21f8d150245378bd6e9587ce5786c41359076382ea9f0ea38f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aa044e1bdc13c61c5ad85bf6dfb89988262538aed86950ee2abef47a2d810eaf",
+				"dweb:/ipfs/QmQ9wMxYJbScW4RcN1M6iFgNe6CNEXcXUBiECtr2j8mE2S"
+			]
+		}
+	},
+	"version": 1
+}
