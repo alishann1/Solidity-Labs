@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "findSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "Sum",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 21 Aug/Task All 21.sol": "FindSum"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 21 Aug/Task All 21.sol": {
+			"keccak256": "0x64b7268db911f8a7fa15fe3defd22b364bc5aeed6add79b86468f44d0d32fb13",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dae6cb1d69f3ed35ec6c104154d499b1bac986679d6c6bd7aba26fbcc987f44e",
+				"dweb:/ipfs/QmXdgvuLmDYyueNqmAaPKwhzV7rbZr33oyBJsuzDv4gn2H"
+			]
+		}
+	},
+	"version": 1
+}

@@ -6,26 +6,26 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "base",
+				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "_x",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
-				"name": "setX",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "x",
+				"name": "foo",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"LABS 16 Aug/Task All 16.sol": "Base"
+			"LABS 16 Aug/Task 11.sol": "Base"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -59,12 +59,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"LABS 16 Aug/Task All 16.sol": {
-			"keccak256": "0x1996ae9ca8e518f4380a57d1a5d05ac9ed5ac7eaa8d533fa593402cdfe20d9ef",
-			"license": "MIT",
+		"LABS 16 Aug/Task 11.sol": {
+			"keccak256": "0x2c5a427599939e04fc44eb3a62f4b842fb6127cce8e5c93e0b9b381cffd95138",
 			"urls": [
-				"bzz-raw://1ba60f0b7b42ac8a3779a06d65cabcef50a80131ea93e37e4ec47c9767784a5a",
-				"dweb:/ipfs/QmcrwUvWQTJL5dkJExa1AeHVFoCe7Gcw2F12MWDCxNmqap"
+				"bzz-raw://a36fd2518a4da6f122f5ac1ef05f0f35a5c1c6a6b697fa4e3cb3c2a893c45010",
+				"dweb:/ipfs/QmQmWgReZVqxRCC37oMcNXB7j6ngND7gZDx68XGKcyu3Bb"
 			]
 		}
 	},

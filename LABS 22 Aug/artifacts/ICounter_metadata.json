@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "count",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "square",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 22 Aug/Task All 22.sol": "ICounter"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 22 Aug/Task All 22.sol": {
+			"keccak256": "0x558809bb3c695fdcae6852dabe7f8a5308d1e225490da012f867bc95dab5cb31",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d83274c336475423c4e4ba9b0fc6ded1bac71ab9c9052b55720091d33a2327ac",
+				"dweb:/ipfs/QmeBtpNNqxrCcd2EVKRULBoi4vd4muUopAi49NkNhBM2ui"
+			]
+		}
+	},
+	"version": 1
+}

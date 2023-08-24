@@ -8,7 +8,7 @@ contract Marketplace{
     mapping(address => uint) public balance;
 
     //Task 3
-    event Purchase (address Buyer, address sender, uint valueOfPurchase);
+    event Purchase (address Buyer, address Sender, uint ValueOfPurchase);
 
     //Task 4
     function Register(address) external {

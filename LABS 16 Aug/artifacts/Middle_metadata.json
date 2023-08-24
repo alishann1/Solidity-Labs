@@ -58,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"LABS 16 Aug/Task All 16.sol": "Middle"
+			"LABS 16 Aug/Task 11.sol": "Middle"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -72,12 +72,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"LABS 16 Aug/Task All 16.sol": {
-			"keccak256": "0x396b0fef57bd44e9c724e9416f8af0947442fe823b28bc870e071bf7d0eeeffa",
-			"license": "MIT",
+		"LABS 16 Aug/Task 11.sol": {
+			"keccak256": "0x2c5a427599939e04fc44eb3a62f4b842fb6127cce8e5c93e0b9b381cffd95138",
 			"urls": [
-				"bzz-raw://a7dd84c3c49380ce8a9e29387ac1e99ff6e989eff4db1681327185fb0b7d4f20",
-				"dweb:/ipfs/QmQyg9sx8rK48QiKfjbB6mskdyoAwX2cbR3RiBruRz9Ubv"
+				"bzz-raw://a36fd2518a4da6f122f5ac1ef05f0f35a5c1c6a6b697fa4e3cb3c2a893c45010",
+				"dweb:/ipfs/QmQmWgReZVqxRCC37oMcNXB7j6ngND7gZDx68XGKcyu3Bb"
 			]
 		}
 	},

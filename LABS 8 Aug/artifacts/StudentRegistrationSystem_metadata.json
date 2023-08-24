@@ -31,11 +31,31 @@
 				"outputs": [
 					{
 						"internalType": "uint256[3]",
-						"name": "",
+						"name": "names",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "uint256[3]",
+						"name": "ages",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "uint256[3]",
+						"name": "registrationDates",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "enum StudentRegistrationSystem.Status[3]",
+						"name": "statuses",
+						"type": "uint8[3]"
+					},
+					{
+						"internalType": "uint256[3]",
+						"name": "obtainedMarks",
 						"type": "uint256[3]"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -212,11 +232,11 @@
 	},
 	"sources": {
 		"LABS 8 Aug/Task 1 lab8.sol": {
-			"keccak256": "0xcebfdc3debf0f3bcc266e74e0a7db9d436720cd7f025f5fb6f3b58067ba93197",
+			"keccak256": "0xcc7440a311774f66bf1f3e904a2c78d38515b336e4533074fbcfcd2a08ec91a5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ec2065bc75723f99b9d2af6683492a9d59e1a037b576f178356e8c7ef4c9f5a8",
-				"dweb:/ipfs/QmYAWh9yPouaZSxbM1zgjnYhjpSkiGSBgfYAXWNzrFunDJ"
+				"bzz-raw://3285302d6b91c0d6a242412a464dc5fb8c8faa55dffb128ebb13692d3075628c",
+				"dweb:/ipfs/Qma6xEtwMTkGDTWJUiR8ZHq1WdMc4jbKT7QmLMR28iwP8i"
 			]
 		}
 	},

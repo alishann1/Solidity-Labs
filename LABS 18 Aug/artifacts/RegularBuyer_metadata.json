@@ -17,13 +17,13 @@
 					{
 						"indexed": false,
 						"internalType": "address",
-						"name": "sender",
+						"name": "Sender",
 						"type": "address"
 					},
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "valueOfPurchase",
+						"name": "ValueOfPurchase",
 						"type": "uint256"
 					}
 				],
@@ -138,11 +138,11 @@
 	},
 	"sources": {
 		"LABS 18 Aug/Task All 18.sol": {
-			"keccak256": "0x7c5d60e16dabcbc617c455728dcff1953cce5a17d472ff341ba17a0da055ed00",
+			"keccak256": "0xd240582f99c782a9bf28f9f398416bfef0b907a8db0c7279588a290c660cc4e3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://71cf00837984259ca6ebf60fead95dee28fbde979787c9a78b222e4f29b783eb",
-				"dweb:/ipfs/QmY4zocFPJAPfuMpnoZK7dodwkDojF3hCRMXkP42AWiB7j"
+				"bzz-raw://57bc2268a264e2c219173559dfc9586b0ac2e24104bbf8cac930d05a2b715c4d",
+				"dweb:/ipfs/Qmb5BQSaWxetKXDUXeEM2vWQYFmrEF874vFVVDQ4NuJXGm"
 			]
 		}
 	},

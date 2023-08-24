@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 21 Aug/Import.sol": "Callee"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 21 Aug/Import.sol": {
+			"keccak256": "0x2516313a785e3886955ce53a7fe78ae2a122148b4ab1948c29e607addedcd03e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3a743fdb9c218a5c18a74224dd5e54cd7ebe57fc046d6931437f19ec9b3339c8",
+				"dweb:/ipfs/QmUZgjuHAk1B5PsjmonQwHrFMheNkzt1szDJCKgjqFd8wg"
+			]
+		}
+	},
+	"version": 1
+}

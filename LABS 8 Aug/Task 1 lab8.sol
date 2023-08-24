@@ -2,7 +2,6 @@
 pragma solidity ^0.8.17;
 
 contract StudentRegistrationSystem {
-    
     // Task 1
     enum Department {
         AI,
@@ -113,8 +112,15 @@ contract StudentRegistrationSystem {
     }
 
     // Task 9
-    function TopAchiever() public view returns (uint[3] memory) {
-        return top3;
+    function TopAchiever() public pure returns (
+            uint[3] memory names,
+            uint[3] memory ages,
+            uint[3] memory registrationDates,
+            Status[3] memory statuses,
+            uint[3] memory obtainedMarks
+        )
+    {
+        return (names, ages, registrationDates, statuses, obtainedMarks);
     }
 
     function Top3Achievers() public {

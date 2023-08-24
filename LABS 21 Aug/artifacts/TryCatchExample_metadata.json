@@ -1,0 +1,104 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "simpleDivisionAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "result",
+						"type": "uint256"
+					}
+				],
+				"name": "DivisionResult",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "numerator",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "denominator",
+						"type": "uint256"
+					}
+				],
+				"name": "tryDivide",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 21 Aug/Task All 21.sol": "TryCatchExample"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 21 Aug/Import.sol": {
+			"keccak256": "0x2516313a785e3886955ce53a7fe78ae2a122148b4ab1948c29e607addedcd03e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3a743fdb9c218a5c18a74224dd5e54cd7ebe57fc046d6931437f19ec9b3339c8",
+				"dweb:/ipfs/QmUZgjuHAk1B5PsjmonQwHrFMheNkzt1szDJCKgjqFd8wg"
+			]
+		},
+		"LABS 21 Aug/Import2.sol": {
+			"keccak256": "0xe29759d654c6dd465ac65fb7120c73f17ecd6d4c1929b3e9461952c54ba0fc9a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ef12ec2ca53f793f522e03392db2197b089bb7b509a517742c6cb9c32e33d868",
+				"dweb:/ipfs/QmV22hBxS9WywrVXSjZGSwKvjoMTMQgDwhTXf948ZG8LRw"
+			]
+		},
+		"LABS 21 Aug/Task All 21.sol": {
+			"keccak256": "0xc34ab69948638182e11523a7c53a9c4c0bce18651cbdcf9968d58d59ccfb160e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://deeef666cecd634bfd6c04dc9b7d9a0f5734abaf62b5e6d78c7b6e344f3bad15",
+				"dweb:/ipfs/QmVKXMcXSt2Nynf1ZhffoMZ9Y6ziVu8c7EgX4kpGE2Krjp"
+			]
+		}
+	},
+	"version": 1
+}

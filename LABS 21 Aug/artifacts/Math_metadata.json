@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "findDiff",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "Diff",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "findExpo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "Expo",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "findSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "Sum",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LABS 21 Aug/Task All 21.sol": "Math"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LABS 21 Aug/Task All 21.sol": {
+			"keccak256": "0x5361297b07aa6b94942179372f841ca79202a6b1dd2beb55422a0c6b60243fea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://97be72936a028710362735ada7a167828a2ba532375c568ec51249904af50ec7",
+				"dweb:/ipfs/QmYjKS6XCkAgmHEQo3G5BNzpiZmhbez6xMWtsR1pPr46vL"
+			]
+		}
+	},
+	"version": 1
+}
