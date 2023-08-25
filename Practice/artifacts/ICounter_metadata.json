@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "power",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Practice/quiz.sol": "ICounter"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Practice/quiz.sol": {
+			"keccak256": "0x982ddfffd71511cd2f03c7a326652921b945f7e56254147360f46fdc9316132d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://356dd1c9412f8be27918520b9256047f8ec401152d9eb32d4fa2906978cabef4",
+				"dweb:/ipfs/QmSesjvAapczynxrywrWVLeDGdPaf5RLL5eUHntMMfvtsN"
+			]
+		}
+	},
+	"version": 1
+}

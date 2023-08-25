@@ -71,11 +71,11 @@
 	},
 	"sources": {
 		"LABS 22 Aug/Task All 22.sol": {
-			"keccak256": "0x558809bb3c695fdcae6852dabe7f8a5308d1e225490da012f867bc95dab5cb31",
+			"keccak256": "0x37ef54c6b206019abcd82d7b035e254913334727bab257948fcf428efafe3d2c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d83274c336475423c4e4ba9b0fc6ded1bac71ab9c9052b55720091d33a2327ac",
-				"dweb:/ipfs/QmeBtpNNqxrCcd2EVKRULBoi4vd4muUopAi49NkNhBM2ui"
+				"bzz-raw://774ff362f94effbd836a17d4598969715f5a8f5dc3f06b9f39f2804561b166aa",
+				"dweb:/ipfs/QmTkYBWKFNJ8TckmYmQc7ufKXeqGStMA3sJUbLVwZtgwcT"
 			]
 		}
 	},

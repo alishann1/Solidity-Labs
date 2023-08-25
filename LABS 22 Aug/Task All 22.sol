@@ -82,13 +82,20 @@ contract Payable {
 
 //Task 5
 
-contract PaymentContract{
+contract PaymentContract {
     address payable Sender;
-    constructor() payable  {
+
+    constructor() payable {
         Sender = payable(address(this));
     }
-    event Confirmation(address, uint);
-    function recievePayment() public payable returns (uint sender, uint reciever) {
+
+    event Confirmation(address, uint256);
+
+    function recievePayment()
+        public
+        payable
+        returns (uint256 sender, uint256 reciever)
+    {
         sender = (msg.sender).balance;
         reciever = address(this).balance;
         emit Confirmation(address(this), (msg.sender).balance);
