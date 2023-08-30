@@ -46,16 +46,30 @@ contract Patient is Person {
     }
 }
 
+// contract PatienList {
+//     Patient[] public Patients;
+
+//     constructor() {
+//         Patient newPatient = new Patient("Bob", 20, "Fever");
+//         Patients.push(newPatient);
+//     }
+
+//     function getPatientRecords(uint256 _index) public view returns (Patient) {
+//         return (Patients[_index]);
+//     }
+// }
+
 contract PatienList {
     Patient[] public Patients;
 
     constructor() {
         Patient newPatient = new Patient("Bob", 20, "Fever");
         Patients.push(newPatient);
+        //Patients = newPatient;
     }
 
-    function getPatientRecords(uint256 _index) public view returns (Patient) {
-        return (Patients[_index]);
+    function getPatientRecords(uint _index) public view returns (string memory, uint256, string memory) {
+        return (Patients[_index].Disease(), Patients[_index].Age(), Patients[_index].Name());
     }
 }
 

@@ -354,8 +354,78 @@
 			},
 			{
 				"inputs": [],
+				"name": "fraudVote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getBalance",
 				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCreditInfo",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Credit.State",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
 					{
 						"internalType": "uint256",
 						"name": "",
@@ -406,6 +476,34 @@
 			},
 			{
 				"inputs": [],
+				"name": "refund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "repay",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "requestInterest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "revokeVote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "toggleActive",
 				"outputs": [
 					{
@@ -414,6 +512,13 @@
 						"type": "bool"
 					}
 				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withDraw",
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -446,11 +551,11 @@
 	},
 	"sources": {
 		"Project Module 2/Credit.sol": {
-			"keccak256": "0xd14fbaafd8112ef470e6f056ca56e1c41ecf1e21bc3bd4954b8ac3b3a06f212b",
+			"keccak256": "0x9c9d58be9368084c77a878c6919784551e7597cc60c35ad2120273e7e3615562",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9f0191159e064989840d762a093aac4d7d191a9e06cbbece0e7d67d0bca3e7c6",
-				"dweb:/ipfs/QmPyCjgZrL8CNocSB2Aa4b9HUDbnB9YhrgpUY4g2QkSapu"
+				"bzz-raw://30e1c0f9336d9cfaa6e4b6b9f311ae0795fc1262f51e7c91153c4c8c00e23200",
+				"dweb:/ipfs/QmVthU99SLvDnaBuAzknizmRvtK3MtQYH38nQrAYYuPsK4"
 			]
 		},
 		"Project Module 2/Ownable.sol": {

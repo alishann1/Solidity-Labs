@@ -324,11 +324,11 @@
 	},
 	"sources": {
 		"Project Module 2/Credit.sol": {
-			"keccak256": "0xd14fbaafd8112ef470e6f056ca56e1c41ecf1e21bc3bd4954b8ac3b3a06f212b",
+			"keccak256": "0xd84552349715788e3bc9475c6236bbc87c4a38863340c0e3349c77573a6089ba",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9f0191159e064989840d762a093aac4d7d191a9e06cbbece0e7d67d0bca3e7c6",
-				"dweb:/ipfs/QmPyCjgZrL8CNocSB2Aa4b9HUDbnB9YhrgpUY4g2QkSapu"
+				"bzz-raw://4fb5612b66db2894696426885fd1ff182071e440319019a1eeac0f5aee8e38de",
+				"dweb:/ipfs/Qme7acX3dcCEGRPKubrvUVQame2TrKoFRWjGW1vtLcPnNZ"
 			]
 		},
 		"Project Module 2/Ownable.sol": {

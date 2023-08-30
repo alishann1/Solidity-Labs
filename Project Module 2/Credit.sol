@@ -20,7 +20,7 @@ contract Credit is Ownable {
     bool active = true;
     uint256 lendersCount = 0;
     uint256 revokeVotes = 0;
-    uint256 revokeTimeNeeded = block.timestamp + 1 seconds;
+    uint256 revoke = block.timestamp + 1 seconds;
     uint256 fraudVotes = 0;
     mapping(address => bool) public lenders;
     mapping(address => uint256) lendersInvestedAmount;
@@ -129,7 +129,7 @@ contract Credit is Ownable {
         _;
     }
     modifier isRevokable() {
-        require(block.timestamp >= revokeTimeNeeded);
+        require(block.timestamp >= revoke);
         require(state == State.investment);
         _;
     }
@@ -189,14 +189,149 @@ contract Credit is Ownable {
             }
             lenders[msg.sender] = true;
             lendersCount++;
-            lendersInvestedAmount[msg.sender] = lendersInvestedAmount
-            [msg.sender].add(msg.value.sub(extraMoney));
+            lendersInvestedAmount[msg.sender] = lendersInvestedAmount[
+                msg.sender
+            ].add(msg.value.sub(extraMoney));
             emit LogLenderInvestment(
                 msg.sender,
                 msg.value.sub(extraMoney),
                 block.timestamp
             );
         }
-        
+    }
+
+    function repay() public payable onlyBorrower canRepay {
+        require(msg.value >= repaymentInstallment);
+        assert(repaidAmount < returnAmount);
+        remainingRepayments--;
+        lastRepaymentDate = block.timestamp;
+        uint256 extraMoney = 0;
+
+        if (msg.value > repaymentInstallment) {
+            extraMoney = msg.value.sub(repaymentInstallment);
+            assert(repaymentInstallment == msg.value.sub(extraMoney));
+            assert(extraMoney <= msg.value);
+            payable(msg.sender).transfer(extraMoney);
+            emit LogBorrowerChangeReturned(
+                msg.sender,
+                extraMoney,
+                block.timestamp
+            );
+            emit LogBorrowerRepaymentInstallment(
+                msg.sender,
+                msg.value.sub(extraMoney),
+                block.timestamp
+            );
+            repaidAmount = repaidAmount.add(msg.value.sub(extraMoney));
+            if (repaidAmount == returnAmount) {
+                emit LogBorrowerRepaymentFinished(msg.sender, block.timestamp);
+                state = State.interestReturns;
+                emit LogCreditStateChanged(state, block.timestamp);
+            }
+        }
+    }
+
+    function withDraw() public isActive onlyBorrower canWithdraw isNotFraud {
+        state = State.repayment;
+        emit LogCreditStateChanged(state, block.timestamp);
+        emit LogBorrowerWithdrawal(
+            msg.sender,
+            address(this).balance,
+            block.timestamp
+        );
+        payable(borrower).transfer(address(this).balance);
+    }
+
+    function requestInterest() public isActive onlyLender canAskForInterest {
+        uint256 lenderReturnAmount = lendersInvestedAmount[msg.sender].mul(
+            returnAmount.div(lendersCount).div(
+                lendersInvestedAmount[msg.sender]
+            )
+        );
+        assert(address(this).balance >= lenderReturnAmount);
+        payable(msg.sender).transfer(lenderReturnAmount);
+        emit LogLenderWithdrawal(
+            msg.sender,
+            lenderReturnAmount,
+            block.timestamp
+        );
+
+        if (address(this).balance == 0) {
+            active = false;
+            emit LogCreditStateActiveChanged(active, block.timestamp);
+            state = State.expired;
+            emit LogCreditStateChanged(state, block.timestamp);
+        }
+    }
+
+    function getCreditInfo()
+        public
+        view
+        returns (
+            address,
+            bytes memory,
+            uint256,
+            uint256,
+            uint256,
+            uint256,
+            uint256,
+            uint256,
+            State,
+            bool,
+            uint256
+        )
+    {
+        return (
+            borrower,
+            description,
+            requestedAmount,
+            requestedRepayments,
+            repaymentInstallment,
+            remainingRepayments,
+            interest,
+            returnAmount,
+            state,
+            active,
+            address(this).balance
+        );
+    }
+
+    function revokeVote() public isActive isRevokable onlyLender {
+        require(revokeVoters[msg.sender] == false);
+        revokeVotes++;
+        revokeVoters[msg.sender] == true;
+        emit LogLenderVoteForRevoking(msg.sender, block.timestamp);
+        if (lendersCount == revokeVotes) {
+            revokee();
+        }
+    }
+
+    function revokee() internal {
+        state = State.revoked;
+        emit LogCreditStateChanged(state, block.timestamp);
+    }
+
+    function refund() public isActive onlyLender isRevoked {
+        assert(address(this).balance >= lendersInvestedAmount[msg.sender]);
+        payable(msg.sender).transfer(lendersInvestedAmount[msg.sender]);
+        emit LogLenderRefunded(
+            msg.sender,
+            lendersInvestedAmount[msg.sender],
+            block.timestamp
+        );
+
+        if (address(this).balance == 0) {
+            active = false;
+            emit LogCreditStateActiveChanged(active, block.timestamp);
+            state = State.expired;
+            emit LogCreditStateChanged(state, block.timestamp);
+        }
+    }
+
+    function fraudVote() public isActive onlyLender {
+        require(fraudVoters[msg.sender] == false);
+        fraudVotes++;
+        fraudVoters[msg.sender] == true;
+        emit LogLenderVoteForFraud(msg.sender, block.timestamp);
     }
 }

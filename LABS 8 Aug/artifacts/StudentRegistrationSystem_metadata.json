@@ -20,42 +20,121 @@
 			},
 			{
 				"inputs": [],
-				"name": "Top3Achievers",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "TopAchiever",
+				"name": "Top3BlockchainAchievers",
 				"outputs": [
 					{
-						"internalType": "uint256[3]",
-						"name": "names",
-						"type": "uint256[3]"
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "date",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum StudentRegistrationSystem.Department",
+								"name": "department",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum StudentRegistrationSystem.Status",
+								"name": "status",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "ObtainedMarks",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct StudentRegistrationSystem.Student",
+						"name": "S1",
+						"type": "tuple"
 					},
 					{
-						"internalType": "uint256[3]",
-						"name": "ages",
-						"type": "uint256[3]"
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "date",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum StudentRegistrationSystem.Department",
+								"name": "department",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum StudentRegistrationSystem.Status",
+								"name": "status",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "ObtainedMarks",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct StudentRegistrationSystem.Student",
+						"name": "S2",
+						"type": "tuple"
 					},
 					{
-						"internalType": "uint256[3]",
-						"name": "registrationDates",
-						"type": "uint256[3]"
-					},
-					{
-						"internalType": "enum StudentRegistrationSystem.Status[3]",
-						"name": "statuses",
-						"type": "uint8[3]"
-					},
-					{
-						"internalType": "uint256[3]",
-						"name": "obtainedMarks",
-						"type": "uint256[3]"
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "date",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum StudentRegistrationSystem.Department",
+								"name": "department",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum StudentRegistrationSystem.Status",
+								"name": "status",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "ObtainedMarks",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct StudentRegistrationSystem.Student",
+						"name": "S3",
+						"type": "tuple"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -103,6 +182,11 @@
 						"internalType": "uint256",
 						"name": "ObtainedMarks",
 						"type": "uint256"
+					},
+					{
+						"internalType": "enum StudentRegistrationSystem.Status",
+						"name": "status",
+						"type": "uint8"
 					}
 				],
 				"name": "register",
@@ -232,11 +316,11 @@
 	},
 	"sources": {
 		"LABS 8 Aug/Task 1 lab8.sol": {
-			"keccak256": "0xcc7440a311774f66bf1f3e904a2c78d38515b336e4533074fbcfcd2a08ec91a5",
+			"keccak256": "0xd428b3019c1654117691427f90270d04e86cb0517888db3f9b71007aed4701d7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3285302d6b91c0d6a242412a464dc5fb8c8faa55dffb128ebb13692d3075628c",
-				"dweb:/ipfs/Qma6xEtwMTkGDTWJUiR8ZHq1WdMc4jbKT7QmLMR28iwP8i"
+				"bzz-raw://cd30748f683766539db7ca314b9e6e8477e545822a06650a677b3c2287433c4e",
+				"dweb:/ipfs/QmYvXqE62mbix5X5REUggmKLhV5Sz5Ud4GyU6f231PzALS"
 			]
 		}
 	},

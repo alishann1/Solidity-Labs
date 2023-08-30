@@ -122,11 +122,11 @@
 			]
 		},
 		"LABS 21 Aug/Task All 21.sol": {
-			"keccak256": "0xc34ab69948638182e11523a7c53a9c4c0bce18651cbdcf9968d58d59ccfb160e",
+			"keccak256": "0xe882e6ec855ed33c0948a43631841b77b728c8063692bdf9db3c0f5d57f3db82",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://deeef666cecd634bfd6c04dc9b7d9a0f5734abaf62b5e6d78c7b6e344f3bad15",
-				"dweb:/ipfs/QmVKXMcXSt2Nynf1ZhffoMZ9Y6ziVu8c7EgX4kpGE2Krjp"
+				"bzz-raw://ed44d3853f82e1db6d7513e46df88f33ea630f3a6f317832800aaff5eccaebed",
+				"dweb:/ipfs/QmWVHWNQgHSKJCaJZCQSLfp1Gg68YQcW8qcAmshTA4YbUP"
 			]
 		}
 	},

@@ -21,33 +21,34 @@ contract StudentRegistrationSystem {
     //Task 3
     struct Student {
         string name;
-        uint age;
-        uint date;
+        uint256 age;
+        uint256 date;
         Department department;
         Status status;
-        uint ObtainedMarks;
+        uint256 ObtainedMarks;
     }
 
     //Task 4
-    mapping(uint => Student) TotalStudents;
-    uint public StudentCount;
-    uint[3] top3;
+    mapping(uint256 => Student) TotalStudents;
+    uint256 public StudentCount;
+    uint256[3] top3;
 
     // Task 5
     function register(
         string memory name,
-        uint age,
-        uint date,
+        uint256 age,
+        uint256 date,
         Department department,
-        uint ObtainedMarks
-    ) public returns (uint) {
-        uint _roll = StudentCount + 1;
+        uint256 ObtainedMarks,
+        Status status
+    ) public returns (uint256) {
+        uint256 _roll = StudentCount + 1;
         TotalStudents[_roll] = Student(
             name,
             age,
             date,
             department,
-            Status.NotEnrolled,
+            status,
             ObtainedMarks
         );
         StudentCount++;
@@ -56,13 +57,13 @@ contract StudentRegistrationSystem {
 
     // Task 6
     function update(
-        uint rollno,
+        uint256 rollno,
         string memory name,
-        uint age,
-        uint date,
+        uint256 age,
+        uint256 date,
         Department department,
         Status status,
-        uint _ObtainedMarks
+        uint256 _ObtainedMarks
     ) public {
         if (rollno > 0 && rollno <= StudentCount) {
             TotalStudents[rollno] = Student(
@@ -77,16 +78,16 @@ contract StudentRegistrationSystem {
     }
 
     // Task 7
-    function retrieve(uint rollno)
+    function retrieve(uint256 rollno)
         public
         view
         returns (
             string memory name,
-            uint age,
-            uint date,
+            uint256 age,
+            uint256 date,
             Department department,
             Status status,
-            uint ObtainedMarks
+            uint256 ObtainedMarks
         )
     {
         require(rollno > 0 && rollno <= StudentCount, "Invalid roll number");
@@ -101,9 +102,9 @@ contract StudentRegistrationSystem {
     }
 
     // Task 8
-    function getCount(Department department) public view returns (uint) {
-        uint count = 0;
-        for (uint i = 1; i <= StudentCount; i++) {
+    function getCount(Department department) public view returns (uint256) {
+        uint256 count = 0;
+        for (uint256 i = 1; i <= StudentCount; i++) {
             if (TotalStudents[i].department == department) {
                 count++;
             }
@@ -112,37 +113,26 @@ contract StudentRegistrationSystem {
     }
 
     // Task 9
-    function TopAchiever() public pure returns (
-            uint[3] memory names,
-            uint[3] memory ages,
-            uint[3] memory registrationDates,
-            Status[3] memory statuses,
-            uint[3] memory obtainedMarks
-        )
-    {
-        return (names, ages, registrationDates, statuses, obtainedMarks);
-    }
-
-    function Top3Achievers() public {
-        uint[] memory _arr = new uint[](StudentCount);
-        for (uint i = 1; i <= StudentCount; i++) {
-            _arr[i - 1] = i;
-        }
-
-        for (uint j = 0; j < _arr.length; j++) {
-            for (uint k = 0; k < _arr.length - 1; k++) {
-                if (
-                    TotalStudents[_arr[k]].ObtainedMarks <
-                    TotalStudents[_arr[k + 1]].ObtainedMarks
-                ) {
-                    uint _bucket = _arr[k + 1];
-                    _arr[k + 1] = _arr[k];
-                    _arr[k] = _bucket;
+    function Top3BlockchainAchievers() public view returns (Student memory S1, Student memory S2, Student memory S3) {
+        for (uint256 i = 1; i <= StudentCount; i++) {
+            if (TotalStudents[i].department == Department.Blockchain) {
+                if (TotalStudents[i].status == Status.Enrolled) {
+                    if (TotalStudents[i].ObtainedMarks > S1.ObtainedMarks) {
+                        S3 = S2;
+                        S2 = S1;
+                        S1 = TotalStudents[i];
+                    } else if (
+                        TotalStudents[i].ObtainedMarks > S2.ObtainedMarks
+                    ) {
+                        S3 = S2;
+                        S1 = TotalStudents[i];
+                    } else if (
+                        TotalStudents[i].ObtainedMarks > S3.ObtainedMarks
+                    ) {
+                        S3 = TotalStudents[i];
+                    }
                 }
             }
         }
-        top3[0] = _arr[0];
-        top3[1] = _arr[1];
-        top3[2] = _arr[2];
-    }
+    } 
 }
